@@ -1,0 +1,22 @@
+{
+  "name": "marketing-strategy-test-app",
+  "version": "1.0.0",
+  "description": "A marketing strategy test app using React.js and Node.js",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/app.js",
+    "client": "npm start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    // Other backend dependencies
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.15"
+    // Other development dependencies
+  }
+}
